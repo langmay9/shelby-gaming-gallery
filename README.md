@@ -1,18 +1,19 @@
 # Shelby Gaming Gallery
 
-A simple high speed gaming media gallery powered by Shelby storage.
+A simple gaming wallpaper gallery powered by Shelby decentralized storage.
 
-## Idea
+## Features
 
-I am building a lightweight platform where gamers can share:
+- High resolution gaming wallpapers
+- Fast loading media files
+- Decentralized storage with Shelby
 
-- high resolution PC wallpapers
-- short gaming clips
+## Tech Stack
 
-The main goal is to test Shelby's sub second read speeds for media delivery.
+- HTML
+- JavaScript
+- Shelby Storage
 
-Traditional decentralized storage solutions are often too slow for dynamic media browsing. Shelby's fast read performance makes it ideal for hosting high resolution images that need to load instantly.
+## Purpose
 
-## Goal
-
-Testing Shelby storage performance for real time media browsing.
+This project demonstrates how Shelby can host high resolution gaming images and deliver them instantly.
