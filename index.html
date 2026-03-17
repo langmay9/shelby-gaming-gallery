@@ -62,7 +62,8 @@ transform:scale(1.05);
 
 .card img{
 width:100%;
-display:block;
+height:200px;
+object-fit:cover;
 }
 
 .card-title{
@@ -87,11 +88,28 @@ text-align:center;
 <input type="text" id="searchInput" placeholder="Search images...">
 </div>
 
-<!-- Gallery trống -->
 <div class="gallery" id="gallery">
 
-<!-- Mày sẽ add ảnh vào đây -->
+<div class="card"><img src="img1.jpg"><div class="card-title">Image 1</div></div>
+<div class="card"><img src="img2.jpg"><div class="card-title">Image 2</div></div>
+<div class="card"><img src="img3.jpg"><div class="card-title">Image 3</div></div>
+<div class="card"><img src="img4.jpg"><div class="card-title">Image 4</div></div>
+<div class="card"><img src="img5.jpg"><div class="card-title">Image 5</div></div>
+<div class="card"><img src="img6.jpg"><div class="card-title">Image 6</div></div>
+<div class="card"><img src="img7.jpg"><div class="card-title">Image 7</div></div>
+<div class="card"><img src="img8.jpg"><div class="card-title">Image 8</div></div>
+<div class="card"><img src="img9.jpg"><div class="card-title">Image 9</div></div>
+<div class="card"><img src="img10.jpg"><div class="card-title">Image 10</div></div>
+<div class="card"><img src="img11.jpg"><div class="card-title">Image 11</div></div>
+<div class="card"><img src="img12.jpg"><div class="card-title">Image 12</div></div>
+<div class="card"><img src="img13.jpg"><div class="card-title">Image 13</div></div>
+<div class="card"><img src="img14.jpg"><div class="card-title">Image 14</div></div>
+<div class="card"><img src="img15.jpg"><div class="card-title">Image 15</div></div>
 
+</div>
+
+<div id="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); justify-content:center; align-items:center;">
+<img id="modalImg" style="max-width:90%; max-height:90%;">
 </div>
 
 <script>
@@ -113,22 +131,21 @@ card.style.display = "none";
 });
 });
 
+const modal = document.getElementById("modal");
+const modalImg = document.getElementById("modalImg");
+
+document.querySelectorAll(".card img").forEach(img => {
+img.addEventListener("click", function(){
+modal.style.display = "flex";
+modalImg.src = this.src;
+});
+});
+
+modal.addEventListener("click", function(){
+modal.style.display = "none";
+});
+
 </script>
 
 </body>
 </html>
-<div class="card"><img src="img1.jpg"><div class="card-title">Image 1</div></div>
-<div class="card"><img src="img2.jpg"><div class="card-title">Image 2</div></div>
-<div class="card"><img src="img3.jpg"><div class="card-title">Image 3</div></div>
-<div class="card"><img src="img4.jpg"><div class="card-title">Image 4</div></div>
-<div class="card"><img src="img5.jpg"><div class="card-title">Image 5</div></div>
-<div class="card"><img src="img6.jpg"><div class="card-title">Image 6</div></div>
-<div class="card"><img src="img7.jpg"><div class="card-title">Image 7</div></div>
-<div class="card"><img src="img8.jpg"><div class="card-title">Image 8</div></div>
-<div class="card"><img src="img9.jpg"><div class="card-title">Image 9</div></div>
-<div class="card"><img src="img10.jpg"><div class="card-title">Image 10</div></div>
-<div class="card"><img src="img11.jpg"><div class="card-title">Image 11</div></div>
-<div class="card"><img src="img12.jpg"><div class="card-title">Image 12</div></div>
-<div class="card"><img src="img13.jpg"><div class="card-title">Image 13</div></div>
-<div class="card"><img src="img14.jpg"><div class="card-title">Image 14</div></div>
-<div class="card"><img src="img15.jpg"><div class="card-title">Image 15</div></div>
