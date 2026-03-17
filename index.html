@@ -1,14 +1,109 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Shelby Gaming Gallery</title>
+<title>Shelby Media Gallery</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+color:white;
+margin:0;
+padding:40px;
+}
+
+h1{
+text-align:center;
+font-size:40px;
+margin-bottom:10px;
+}
+
+p{
+text-align:center;
+color:#cbd5f5;
+margin-bottom:40px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1e293b;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.5);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card img{
+width:100%;
+display:block;
+}
+
+.card-title{
+padding:15px;
+font-size:16px;
+color:#e2e8f0;
+}
+
+</style>
+
 </head>
 
 <body>
 
-<h1>Shelby Gaming Gallery</h1>
+<h1>Shelby Media Gallery</h1>
 
-<img src="image.png" width="500">
+<p>
+Demo: High-resolution media delivery using decentralized storage concepts (Shelby)
+</p>
+
+<div class="gallery">
+
+<div class="card">
+<img src="cyberpunk.jpg">
+<div class="card-title">Cyberpunk Wallpaper</div>
+</div>
+
+<div class="card">
+<img src="eldenring.jpg">
+<div class="card-title">Elden Ring Wallpaper</div>
+</div>
+
+<div class="card">
+<img src="valorant.jpg">
+<div class="card-title">Valorant Wallpaper</div>
+</div>
+
+<div class="card">
+<img src="Anime1.jpg">
+<div class="card-title">Anime Collection #1</div>
+</div>
+
+<div class="card">
+<img src="Anime2.jpg">
+<div class="card-title">Anime Collection #2</div>
+</div>
+
+<div class="card">
+<img src="Anime3.jpg">
+<div class="card-title">Anime Collection #3</div>
+</div>
+
+<div class="card">
+<img src="Anime4.jpg">
+<div class="card-title">Anime Collection #4</div>
+</div>
+
+</div>
 
 </body>
 </html>
