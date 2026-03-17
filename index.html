@@ -87,52 +87,20 @@ text-align:center;
 <input type="text" id="searchInput" placeholder="Search images...">
 </div>
 
+<!-- Gallery trống -->
 <div class="gallery" id="gallery">
 
-<div class="card">
-<img src="cyberpunk.jpg">
-<div class="card-title">Cyberpunk</div>
-</div>
-
-<div class="card">
-<img src="eldenring.jpg">
-<div class="card-title">Elden Ring</div>
-</div>
-
-<div class="card">
-<img src="valorant.jpg">
-<div class="card-title">Valorant</div>
-</div>
-
-<div class="card">
-<img src="Anime1.jpg">
-<div class="card-title">Anime 1</div>
-</div>
-
-<div class="card">
-<img src="Anime2.jpg">
-<div class="card-title">Anime 2</div>
-</div>
-
-<div class="card">
-<img src="Anime3.jpg">
-<div class="card-title">Anime 3</div>
-</div>
-
-<div class="card">
-<img src="Anime4.jpg">
-<div class="card-title">Anime 4</div>
-</div>
+<!-- Mày sẽ add ảnh vào đây -->
 
 </div>
 
 <script>
 
 const searchInput = document.getElementById("searchInput");
-const cards = document.querySelectorAll(".card");
 
 searchInput.addEventListener("keyup", function(){
 let value = this.value.toLowerCase();
+let cards = document.querySelectorAll(".card");
 
 cards.forEach(card => {
 let title = card.innerText.toLowerCase();
