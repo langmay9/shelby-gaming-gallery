@@ -17,3 +17,6 @@ A simple gaming wallpaper gallery powered by Shelby decentralized storage.
 ## Purpose
 
 This project demonstrates how Shelby can host high resolution gaming images and deliver them instantly.
+## 🚀 Live Demo
+
+https://langmay9.github.io/shelby-image-host
